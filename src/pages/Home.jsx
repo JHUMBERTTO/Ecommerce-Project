@@ -1,10 +1,12 @@
 import React from 'react'
 import ProductList from '../components/ProductList/ProductList'
 
-const HomeProducts = () => {
+const Home = () => {
   return (
-    <ProductList />
+    <div className='container'>
+      <ProductList />
+    </div>
   )
 }
 
-export default HomeProducts
+export default Home

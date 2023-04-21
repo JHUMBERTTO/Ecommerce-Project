@@ -1,0 +1,108 @@
+.productContainer{
+  margin: 75px 0;
+
+}
+
+.layout{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.singleProductPage{
+  display: flex;
+  flex-direction: row;
+}
+
+.leftContainer{
+  width: 600px;
+  height: 600px;
+  flex-shrink: 0;
+}
+
+.imageItem{
+  width: 100%;
+  display: block;
+}
+
+.rightContainer{
+  display: flex;
+  flex-direction: column;
+  padding-top: 0 35px;
+  margin: 100px;
+}
+
+.nameProduct{
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
+.priceProduct{
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  color: black;
+}
+
+.description{
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  color: #6b6b6b;
+}
+
+.cartButtons{
+  display: flex;
+  margin-top: 30px;
+}
+
+.quantityButtons{
+  width: fit-content;
+  display: flex;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  margin-right: 10px ;
+  height: 50px;
+}
+
+.dashPlus{
+  font-size: 18px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #6b6b6b;
+}
+
+
+
+.addToBagButton{
+  outline: 0;
+  border: 0;
+  height: 50px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  background: blueviolet;
+}
+
+.divider{
+  margin: 20px 0;
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.socialIcon{
+  font-size: 22px;
+  font-weight: 400 ;
+  cursor: pointer;
+  text-decoration: none;
+  color: #6b6b6b;
+}

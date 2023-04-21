@@ -1,12 +1,12 @@
 import {Routes, Route} from 'react-router-dom'
-import HomeProducts from '../pages/HomeProducts'
+import Home from '../pages/Home'
 import SingleProduct from '../pages/SingleProduct'
 
 
 const RoutesIndex = () => {
   return(
     <Routes>
-      <Route path='/' element={<HomeProducts />}/>
+      <Route path='/' element={<Home/>}/>
       <Route path='/Product/:id' element={<SingleProduct />}/>
       <Route path='*' element={<h1>Not found</h1>}></Route>
     </Routes>

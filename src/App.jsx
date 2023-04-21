@@ -1,16 +1,17 @@
 import './App.css'
-import HomeProducts from './pages/HomeProducts'
+import Home from './pages/Home'
 import ProductProvider from './context/ProductContext'
 import RoutesIndex from './routes'
 import { Outlet } from 'react-router-dom'
+import Navbar from './components/Navbar/Navbar'
 
 function App () {
   return (
     <div>
       <ProductProvider>
+        <Navbar/>
         <RoutesIndex>
-        <HomeProducts />
-        <Outlet/>
+        <Home/>
         </RoutesIndex>
       </ProductProvider>
     </div>
