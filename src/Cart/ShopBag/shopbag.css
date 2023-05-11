@@ -1,0 +1,72 @@
+.cartPanel{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.layer{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cartContent{
+  height: 100%;
+  width: 340px;
+  position: relative;
+  background: white;
+  z-index: 1;
+  flex-direction: column;
+  transform: translate(100%);;
+  animation: slideCartWindow 0.3s ease forwards;
+}
+
+@keyframes slideCartWindow {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.cartHeader{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.heading{
+  flex-grow: 1;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.closeButton{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.text{
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.text:hover{
+  opacity: 0.5;
+}
+
+.closeButton:hover{
+  opacity: 0.5;
+}
