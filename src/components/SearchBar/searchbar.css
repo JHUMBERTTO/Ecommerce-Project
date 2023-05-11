@@ -1,0 +1,95 @@
+.searchModal{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+
+.formField{
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.searchResultContent{
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.searchResults{
+  height: calc(100vh - 160px);
+  overflow: auto;
+  margin: 20px 0;
+}
+
+.searchResultItem{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.imgContainer{
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 70px;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.imageSearchBar{
+  width: 100%;
+  height: 100%;
+}
+
+.productDetails{
+  overflow: hidden;
+  position: relative;
+}
+
+.nameItem{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 16px;
+  display: block;
+  line-height: 1;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: black;
+}
+
+.descItem{
+  font-size: 14px;
+  line-height: 1;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.searchBar{
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+}
+
+.closeBtn{
+  position: absolute;
+  font-size: 40px;
+  right:420px;
+  top: 35%;
+  cursor: pointer;
+}
