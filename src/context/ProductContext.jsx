@@ -7,6 +7,7 @@ export default function ProductProvider (props) {
   const [selectedProduct, setSelectedProduct] = useState({})
   const { data, loading, error } = useFetch('https://fakestoreapi.com/products')
   const [lista, setLista] = useState({})
+  const [search, setSearch] = useState('')
 
   useEffect(() => {
     setLista(data)
@@ -18,7 +19,9 @@ export default function ProductProvider (props) {
     loading,
     error,
     selectedProduct,
-    setSelectedProduct
+    setSelectedProduct,
+    search,
+    setSearch
   }
 
   return (
