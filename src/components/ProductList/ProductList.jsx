@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useProductContext } from "../../context/ProductContext";
-import { Outlet ,Link, useParams, Navigate } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 import './productlist.css'
 
 const ProductList = () => {
